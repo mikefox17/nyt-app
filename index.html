@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <style>
+        /* Your external css file will go here. This is just for testing :) */
+        .jumbotron{
+
+          background-color:#20315A;
+          margin-top: 5px;
+
+        }
+
+
+        #submitBTN {
+          background-color:#20315A;
+          
+
+
+        }
+      </style>
+
+      
+  </head>
+  <body>
+    
+    <div class="container">
+      <div
+        class="jumbotron text-center text-light"
+        
+      >
+        NYT SEARCH
+      </div>
+<div class='card-fluid'>
+  <div class='card-header'>Search Parameters</div>
+      <form>
+        <br>
+        
+        <!--search term-->
+        <div class="form-group" id="search">
+          <label for="exampleFormControlInput1">Search Term</label>
+          <input
+            type="Search"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="exp search for article"
+          />
+        </div>
+        <!--drop down list-->
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Number of records to retrieve</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>5</option>
+            <option>10</option>
+            
+          </select>
+        </div>
+        <form>
+          <!--start year-->
+            <div class="form-group" id="startyear">
+              <label for="exampleFormControlInput1">Start Year (Optional)</label>
+              <input
+                type="Search"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="exp 1800"
+              />
+            </div>
+            <form>
+              <!--end year-->
+                <div class="form-group" id="endyear">
+                  <label for="exampleFormControlInput1">End Year(Optional)</label>
+                  <input
+                    type="Search"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="exp 1800"
+                  />
+                </div>
+        
+        
+        </form>
+
+          </div>
+            <button class="fa fa-search btn text-light" id='submitBTN'>Search</button>
+            <button class="fa fa-search btn btn-danger">Clear Results</button>
+    
+
+    
+    <hr>
+    <div class='card-fluid' id='results'>
+    <div class="card-header">Top Articles</div>
+    </div>
+    </div>
+  </body>
+</html>
