@@ -16,18 +16,12 @@
     <style>
         /* Your external css file will go here. This is just for testing :) */
         .jumbotron{
-
           background-color:#20315A;
           margin-top: 5px;
-
         }
-
-
         #submitBTN {
           background-color:#20315A;
           
-
-
         }
       </style>
 
@@ -48,12 +42,12 @@
         <br>
         
         <!--search term-->
-        <div class="form-group" id="search">
+        <div class="form-group" >
           <label for="exampleFormControlInput1">Search Term</label>
           <input
             type="Search"
             class="form-control"
-            id="exampleFormControlInput1"
+            id="search"
             placeholder="exp search for article"
           />
         </div>
@@ -69,23 +63,23 @@
         </div>
         <form>
           <!--start year-->
-            <div class="form-group" id="startyear">
+            <div class="form-group" >
               <label for="exampleFormControlInput1">Start Year (Optional)</label>
               <input
                 type="Search"
                 class="form-control"
-                id="exampleFormControlInput1"
+                id="startyear"
                 placeholder="exp 1800"
               />
             </div>
             <form>
               <!--end year-->
-                <div class="form-group" id="endyear">
+                <div class="form-group" >
                   <label for="exampleFormControlInput1">End Year(Optional)</label>
                   <input
                     type="Search"
                     class="form-control"
-                    id="exampleFormControlInput1"
+                    id="endyear"
                     placeholder="exp 1800"
                   />
                 </div>
@@ -95,7 +89,7 @@
 
           </div>
             <button class="fa fa-search btn text-light" id='submitBTN'>Search</button>
-            <button class="fa fa-search btn btn-danger">Clear Results</button>
+            <button class="fa fa-search btn btn-danger" id="clear">Clear Results</button>
     
 
     
@@ -104,5 +98,8 @@
     <div class="card-header">Top Articles</div>
     </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
